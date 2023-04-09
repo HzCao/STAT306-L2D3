@@ -78,3 +78,4 @@ plot(x=seq(1,4,by=1), y=summarybackward$bic, xlab="Model", ylab="BIC Values")
 modelfinal <- lm(data=insurance2, charges ~ age + bmi + children + smoker)
 summary(modelfinal)
 #Final model
+resid_plot <- plot(resid(modelfinal))
